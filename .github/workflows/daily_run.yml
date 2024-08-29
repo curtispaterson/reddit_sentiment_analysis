@@ -23,4 +23,4 @@ jobs:
 
       - name: Run script
         run: |
-          python fetch_data.py
+          fetch_data.py
