@@ -2,7 +2,8 @@ name: Daily Run
 
 on:
   schedule:
-    - cron: '30 15 * * *'  # Runs every day at 15:30 UTC, which is 16:30 BST
+    - cron: '00 16 * * *'  # This is your scheduled time (15:30 UTC for 16:30 BST)
+  workflow_dispatch:  # This enables manual triggering of the workflow
 
 jobs:
   run-script:
@@ -23,4 +24,4 @@ jobs:
 
       - name: Run script
         run: |
-          fetch_data.py
+          python fetch_data.py  # Replace with your actual script name
