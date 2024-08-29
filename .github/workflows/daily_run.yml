@@ -2,7 +2,7 @@ name: Daily Run
 
 on:
   schedule:
-    - cron: '30 15 * * *'  # Runs every day at 15:30 UTC, which is 16:30 BST
+    - cron: '23 15 * * *'  # Runs every day at 15:30 UTC, which is 16:30 BST
 
 jobs:
   run-script:
