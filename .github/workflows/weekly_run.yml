@@ -4,9 +4,9 @@ on:
   # Allow manual triggering of the workflow
   workflow_dispatch:
 
-  # Schedule to run every Sunday at midnight (UTC)
+  # Schedule to run every Sunday at 9 AM BST (which is 8 AM UTC)
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 8 * * 0'
 
 jobs:
   run_script:
